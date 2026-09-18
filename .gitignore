@@ -1,0 +1,42 @@
+# Local Claude Code settings - machine-specific permissions, not shared config.
+# The agents and commands in .claude/ ARE tracked; only this file is local.
+.claude/settings.local.json
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Scratch and intermediate files, including the covered.tmp used when pruning
+*.tmp
+*.bak
+scratch/
+tmp/
+
+# Logs
+*.log
+
+# Python, for any helper or pruning scripts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node, if tooling ever lands here
+node_modules/
+npm-debug.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS cruft
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

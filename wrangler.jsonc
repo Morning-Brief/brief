@@ -1,0 +1,16 @@
+{
+  // Serves the generated site/ directory as static assets on Cloudflare
+  // Workers. There is no Worker script and none is needed: requests are
+  // handled entirely by Cloudflare's asset-serving path, so there is no cold
+  // start and no CPU billing.
+  //
+  // Change "name" to whatever you want your project called - it becomes part
+  // of your site's URL.
+  "name": "daily-brief",
+  "compatibility_date": "2026-09-10",
+  "assets": {
+    "directory": "./site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
